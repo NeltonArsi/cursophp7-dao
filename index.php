@@ -7,22 +7,22 @@ $usuarios = $sql->select("SELECT * FROM tbUsuarios");
 echo json_encode($usuarios);*/
 
 //Carrega apenas um usuário
-//$nome = new Usuario();
-//$nome->loadById(4);
-//echo $nome;
+/*$nome = new Usuario();
+$nome->loadById(4);
+echo $nome;*/
 
 //Carrega uma lista de usuários
-//$lista = Usuario::getList();
-//echo json_encode($lista);
+/*$lista = Usuario::getList();
+echo json_encode($lista);*/
 
 //Carrega uma lista de usuários buscando pelo login
-//$search = Usuario::search("");
-//echo json_encode($search);
+/*$search = Usuario::search("");
+echo json_encode($search);*/
 
 //Carrega um usuário pelo login e senha
-//$usuario = new Usuario();
-//$usuario->login("N@rsi", "1234567890");
-//echo $usuario;
+/*$usuario = new Usuario();
+$usuario->login("N@rsi", "1234567890");
+echo $usuario;*/
 
 //Inserir usuário no banco de dados
 /*$aluno = new Usuario("Erika", "&rik@");
@@ -32,9 +32,15 @@ $aluno->insert();
 echo $aluno;*/
 
 //Update de informações de usuário
-$usuario = new Usuario();
+/*$usuario = new Usuario();
 $usuario->loadById(9);
 $usuario->Update("Marcos", "mp@351");
+echo $usuario;*/
+
+//Apagando (delete) usuário
+$usuario = new Usuario();
+$usuario->loadById(6);
+$usuario->delete();
 echo $usuario;
 
 ?>
